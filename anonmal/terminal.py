@@ -19,8 +19,6 @@ def launch_terminal():
     env['PS1'] = prompt
     if 'history_file' in settings:
         env['HISTFILE'] = settings['history_file']
-    # Print MOTD if set
     if motd:
         print(motd)
-    # Launch the shell
     subprocess.run([shell] + shell_options, env=env)

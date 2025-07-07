@@ -1,0 +1,12 @@
+# GUI dependencies for settings editor
+tkinter
+
+# No additional Python packages required for core functionality
+# Core dependencies are system packages:
+# - bubblewrap (bwrap)
+# - debootstrap  
+# - python3 (standard library only)
+
+# Optional VPN dependencies (install separately):
+# - openvpn
+# - wireguard-tools

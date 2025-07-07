@@ -11,7 +11,7 @@ def load_vpn_settings():
 
 def connect_vpn():
     if os.geteuid() != 0:
-        print('Error: This action must be run as root. Please run the script with sudo.')
+        print('This action must be run as root. Please run the script with sudo...')
         exit(1)
     settings = load_vpn_settings()
     if not settings.get('enabled', False):
@@ -22,7 +22,6 @@ def connect_vpn():
     credentials = settings.get('credentials', {})
     auto_connect = settings.get('auto_connect', False)
     nested_vpns = settings.get('nested_vpns', [])
-    # Only basic openvpn support for now
     if vpn_type == 'openvpn' and auto_connect and config_files:
         for conf in config_files:
             print(f'Connecting to OpenVPN: {conf}')
@@ -36,7 +35,6 @@ def connect_vpn():
                 subprocess.Popen(cmd)
             else:
                 subprocess.Popen(cmd)
-    # Nested VPNs (basic)
     for nested in nested_vpns:
         ntype = nested.get('vpn_type')
         nconf = nested.get('config_file')

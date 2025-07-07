@@ -27,7 +27,7 @@ def center_window(window, width, height):
 class SettingsEditor:
     def __init__(self, master):
         self.master = master
-        master.title("Anonmal Settings Editor")
+        master.title("Anonmal Settings Editor GUI")
         width, height = 650, 500
         center_window(master, width, height)
 

@@ -1,5 +1,5 @@
 {
-  "enabled": true,
+  "enabled": false,
   "vpn_type": "openvpn",
   "config_files": [
     "/etc/openvpn/client1.ovpn",
@@ -7,9 +7,9 @@
   ],
   "credentials": {
     "username": "anonuser",
-    "password": "strongpassword"
+    "password": "admin"
   },
-  "auto_connect": true,
+  "auto_connect": false,
   "nested_vpns": [
     {
       "vpn_type": "openvpn",

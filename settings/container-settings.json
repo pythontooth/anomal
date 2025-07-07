@@ -4,10 +4,15 @@
   "hostname": "anonmal",
   "tmpfs_mounts": [
     "/tmp",
-    "/home/anon"
+    "/home/anon",
+    "/dev/shm",
+    "/run",
+    "/var/tmp"
   ],
   "environment": {
-    "HISTFILE": "/dev/null"
+    "HISTFILE": "/dev/null",
+    "TMPDIR": "/tmp",
+    "HOME": "/home/anon"
   },
   "default_packages": [
     "wget",
@@ -15,11 +20,15 @@
     "mc",
     "htop",
     "nmap",
-    "openssh-server",
-    "wireshark"
+    "openssh-client",
+    "tcpdump",
+    "nano",
+    "john",
+    "links2"
   ],
   "auto_remove": true,
   "network_mode": "bridge",
-  "cpu_limit": 1.0,
-  "memory_limit": "1g"
+  "cpu_limit": 0.5,
+  "memory_limit": "512m",
+  "pids_limit": 64
 }
