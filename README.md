@@ -1,3 +1,4 @@
+![Anonmal Logo](Anonmal_Logo.png)
 # Anonmal - Anonymous Isolated Terminal
 
 A secure and fully isolated from you machine enviroment with built-in support for nested VPNs.
