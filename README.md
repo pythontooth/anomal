@@ -1,4 +1,9 @@
-![Anonmal Logo](Anonmal_Logo.png)
+<p align="center">
+    <img src="Anonmal_Logo.png" alt="Anonmal Logo"/>
+</p>
+
+---
+
 # Anonmal - Anonymous Isolated Terminal
 
 A secure and fully isolated from you machine enviroment with built-in support for nested VPNs.
