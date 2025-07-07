@@ -1,0 +1,17 @@
+{
+  "shell": "bash",
+  "shell_options": [
+    "--norc",
+    "--noprofile"
+  ],
+  "prompt": "anonmal$ ",
+  "history_file": "/dev/null",
+  "motd": "Welcome to Anonmal! Your session is isolated and anonymous.",
+  "color_scheme": "green",
+  "font": "monospace",
+  "font_size": 12,
+  "window_size": {
+    "columns": 120,
+    "rows": 40
+  }
+}

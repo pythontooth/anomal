@@ -1,0 +1,25 @@
+{
+  "enabled": true,
+  "vpn_type": "openvpn",
+  "config_files": [
+    "/etc/openvpn/client1.ovpn",
+    "/etc/openvpn/client2.ovpn"
+  ],
+  "credentials": {
+    "username": "anonuser",
+    "password": "strongpassword"
+  },
+  "auto_connect": true,
+  "nested_vpns": [
+    {
+      "vpn_type": "openvpn",
+      "config_file": "/etc/openvpn/nested1.ovpn"
+    },
+    {
+      "vpn_type": "wireguard",
+      "config_file": "/etc/wireguard/wg0.conf"
+    }
+  ],
+  "kill_switch": true,
+  "dns_leak_protection": true
+}

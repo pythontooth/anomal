@@ -1,0 +1,25 @@
+{
+  "container_name": "anonmal_temp",
+  "image_name": "ubuntu:latest",
+  "hostname": "anonmal",
+  "tmpfs_mounts": [
+    "/tmp",
+    "/home/anon"
+  ],
+  "environment": {
+    "HISTFILE": "/dev/null"
+  },
+  "default_packages": [
+    "wget",
+    "curl",
+    "mc",
+    "htop",
+    "nmap",
+    "openssh-server",
+    "wireshark"
+  ],
+  "auto_remove": true,
+  "network_mode": "bridge",
+  "cpu_limit": 1.0,
+  "memory_limit": "1g"
+}
