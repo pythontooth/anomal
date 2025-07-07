@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="Anonmal_Logo.png" alt="Anonmal Logo"/>
+    <img src="Anonmal_Logo.png" alt="Anonmal Logo" width="128" height="128"/>
 </p>
 
 ---
